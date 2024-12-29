@@ -1,4 +1,4 @@
-import withLayoutMain from "@libs/components/layout/LayoutHome";
+import withLayoutMain from "@/libs/components/layout/LayoutHome";
 import { Box, Container, Stack } from "@mui/material";
 import { NextPage } from "next";
 
