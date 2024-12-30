@@ -1,6 +1,7 @@
 import withLayoutBasic from "@/libs/components/layout/LayoutBasic";
 import { Stack } from "@mui/material";
 import { NextPage } from "next";
+import React from "react";
 import { useState } from "react";
 
 const Community: NextPage = () => {
