@@ -1,12 +1,13 @@
 import withLayoutBasic from "@/libs/components/layout/LayoutBasic";
 import PropertyCard from "@/libs/components/property/PropertyCard";
-import { Filter } from "@mui/icons-material";
+import Filter from "@/libs/components/property/Filter";
 import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded";
 import { Box, Button, Pagination, Stack, Typography } from "@mui/material";
 import type { NextPage } from "next";
 import { useState } from "react";
+
 const PropertyList: NextPage = () => {
-  const [properties, setProperties] = useState<number[]>([1, 2, 3, 4, 5, 6]);
+  const [properties, setProperties] = useState<number[]>([1, 2,3,4,5,6]);
 
   return (
     <div id="property-list-page" style={{ position: "relative" }}>

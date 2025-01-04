@@ -13,7 +13,6 @@ import {
   Typography,
 } from "@mui/material";
 import { useState } from "react";
-// import { propertySquare } from "../../config";
 
 const Filter = () => {
   const [searchText, setSearchText] = useState<string>("");
@@ -22,27 +21,28 @@ const Filter = () => {
     start: 0,
     end: 250000,
   });
+  const propertySquare = [50, 100, 150, 200, 300, 400, 500];
 
   return (
     <Stack className="filter-main">
-      <Stack className="find-your-home" mb={"40px"}>
-        <Typography className="title-main">Find Your Home</Typography>
-        <Stack className="input-box">
-          <OutlinedInput
-            value={searchText}
-            type="text"
-            className="search-input"
-            placeholder="What are you looking?"
-            onChange={(e: any) => setSearchText(e.target.value)}
-          />
-          <img src="/img/icons/search_icon.png" alt="" />
-          <Tooltip title="Reset">
-            <IconButton>
-              <RefreshIcon />
-            </IconButton>
-          </Tooltip>
+        <Stack className="find-your-home" mb={"40px"}>
+            <Typography className="title-main">Find Your Home</  Typography>
+            <Stack className="input-box">
+            <OutlinedInput
+                value={searchText}
+                type="text"
+                className="search-input"
+                placeholder="What are you looking?"
+                onChange={(e: any) => setSearchText(e.target.value)}
+            />
+            <img src="/img/icons/search_icon.png" alt="" />
+            <Tooltip title="Reset">
+                <IconButton>
+                <RefreshIcon />
+                </IconButton>
+            </Tooltip>
+            </Stack>
         </Stack>
-      </Stack>
       <Stack className="find-your-home" mb={"30px"}>
         <p className="title" style={{ textShadow: "0px 3px 4px #b9b9b9" }}>
           Location
